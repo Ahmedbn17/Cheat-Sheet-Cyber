@@ -9,5 +9,5 @@ Les groupes d’utilisateurs : Le script peut récupérer des informations sur l
 Les informations sur les mots de passe : Bien que le script ne récupère pas directement les mots de passe en clair, il peut récupérer des hachages ou des informations associées aux comptes d’utilisateurs, qui peuvent ensuite être utilisées pour des attaques comme le pass-the-hash.
 
 ```bash
-samrdump.py 10.129.14.128
+samrdump.py [ip]
 ```
