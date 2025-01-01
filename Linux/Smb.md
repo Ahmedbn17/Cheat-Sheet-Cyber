@@ -33,12 +33,22 @@ smbstatus
 
 ---
 
+## Énumeration de SMB
+
+Utilisez la commande suivante pour énumerer un partage spécifique :  
+
+```bash
+smbmap -H [ip]
+```
+-H spécifie l'adresse IP du serveur SMB à scanner.
+
+
 ## Lister les partages disponibles
 
 Utilisez la commande suivante pour afficher les partages disponibles :  
 
 ```bash
-smbclient -N -L //10.129.14.128
+smbclient -N -L //[ip]
 ```
 
 ## Se connecter à un partage spécifique
@@ -46,6 +56,5 @@ smbclient -N -L //10.129.14.128
 Utilisez la commande suivante pour se connecter à un partage spécifique :  
 
 ```bash
-smbclient //10.129.14.128/[nom_du_partage]
+smbclient //[ip]/[nom_du_partage]
 ```
-

@@ -5,7 +5,7 @@
 
 ## Commandes de base pour le RPC
 
-### 1. **Informations sur le serveur**
+### **Informations sur le serveur**
 
 #### `srvinfo`
 Affiche des informations sur le serveur distant, telles que son nom, sa version, et d'autres paramètres de configuration.
@@ -14,7 +14,7 @@ Affiche des informations sur le serveur distant, telles que son nom, sa version,
 srvinfo
 ```
 
-### 2. **Lister les domaines**
+### **Lister les domaines**
 
 #### `enumdomains`
 Cette commande permet d'énumérer tous les domaines présents dans le réseau.
@@ -23,7 +23,7 @@ Cette commande permet d'énumérer tous les domaines présents dans le réseau.
 enumdomains
 ```
 
-### 3. **Obtenir des informations sur un domaine**
+### **Obtenir des informations sur un domaine**
 
 #### `querydominfo`
 Fournit des informations détaillées sur le domaine, le serveur et l'utilisateur du domaine déployé.
@@ -32,7 +32,7 @@ Fournit des informations détaillées sur le domaine, le serveur et l'utilisateu
 querydominfo
 ```
 
-### 4. **Lister les partages**
+### **Lister les partages**
 
 #### `netshareenumall`
 Cette commande énumère tous les partages disponibles sur le serveur distant.
@@ -41,7 +41,7 @@ Cette commande énumère tous les partages disponibles sur le serveur distant.
 netshareenumall
 ```
 
-### 5. **Obtenir des informations sur un partage spécifique**
+### **Obtenir des informations sur un partage spécifique**
 
 #### `netsharegetinfo <share>`
 Fournit des informations détaillées sur un partage spécifique. Remplacez `<share>` par le nom du partage pour obtenir des informations comme la taille, les permissions, etc.
@@ -50,7 +50,7 @@ Fournit des informations détaillées sur un partage spécifique. Remplacez `<sh
 netsharegetinfo <share>
 ```
 
-### 6. **Lister les utilisateurs du domaine**
+### **Lister les utilisateurs du domaine**
 
 #### `enumdomusers`
 Énumère tous les utilisateurs d'un domaine donné. Utile pour récupérer les informations d'authentification possibles.
@@ -59,7 +59,7 @@ netsharegetinfo <share>
 enumdomusers
 ```
 
-### 7. **Obtenir des informations sur un utilisateur spécifique**
+### **Obtenir des informations sur un utilisateur spécifique**
 
 #### `queryuser <RID>`
 Fournit des informations détaillées sur un utilisateur spécifique, en remplaçant `<RID>` par l'identifiant d'utilisateur (Relative Identifier).
@@ -68,7 +68,16 @@ Fournit des informations détaillées sur un utilisateur spécifique, en rempla�
 queryuser <RID>
 ```
 
-### 8. **Lire le contenu d'un fichier (comme `cat`)**
+### **Obtenir des informations sur un utilisateur spécifique**
+
+#### `querygroup <RID>`
+Fournit des informations détaillées sur un groupe spécifique, en remplaçant `<RID>` par l'identifiant de groupe (Relative Identifier).
+
+```bash
+querygroup <RID>
+```
+
+### **Lire le contenu d'un fichier (comme `cat`)**
 
 #### `enumdomains`
 Cette commande permet de lire le contenu d'un fichier, similaire à la commande `cat` sous Linux.
@@ -77,7 +86,7 @@ Cette commande permet de lire le contenu d'un fichier, similaire à la commande 
 enumdomains
 ```
 
-### 9. **Obtenir un résumé de la configuration SMB**
+### **Obtenir un résumé de la configuration SMB**
 
 #### `smbstatus`
 Fournit un résumé de l'état actuel des connexions SMB, y compris les IP, la version SMB, les utilisateurs connectés, et plus encore.
