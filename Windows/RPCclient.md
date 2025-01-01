@@ -7,6 +7,13 @@
 
 ### **Informations sur le serveur**
 
+#### `base`
+connecter au smb ou autre avec RPC
+
+```bash
+rpcclient -U "" 10.129.14.128
+```
+
 #### `srvinfo`
 Affiche des informations sur le serveur distant, telles que son nom, sa version, et d'autres paramètres de configuration.
 
@@ -75,15 +82,6 @@ Fournit des informations détaillées sur un groupe spécifique, en remplaçant 
 
 ```bash
 querygroup <RID>
-```
-
-### **Lire le contenu d'un fichier (comme `cat`)**
-
-#### `enumdomains`
-Cette commande permet de lire le contenu d'un fichier, similaire à la commande `cat` sous Linux.
-
-```bash
-enumdomains
 ```
 
 ### **Obtenir un résumé de la configuration SMB**
