@@ -84,13 +84,5 @@ Fournit des informations détaillées sur un groupe spécifique, en remplaçant 
 querygroup <RID>
 ```
 
-### **Obtenir un résumé de la configuration SMB**
-
-#### `smbstatus`
-Fournit un résumé de l'état actuel des connexions SMB, y compris les IP, la version SMB, les utilisateurs connectés, et plus encore.
-
-```bash
-smbstatus
-```
 ---
 
