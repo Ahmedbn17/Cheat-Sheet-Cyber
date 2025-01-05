@@ -1,4 +1,4 @@
-# NFS (Système de fichiers en réseau) - Guide Récapitulatif
+# NFS (Système de fichiers en réseau)
 
 ## Afficher les Partages NFS Disponibles
 Pour lister tous les partages NFS disponibles sur un serveur distant :
