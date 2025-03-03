@@ -1,4 +1,4 @@
-# John The Ripper - Guide d'utilisation
+# John The Ripper
 
 ## 📌 Présentation
 John The Ripper (JTR) est un outil de cassage de mots de passe open-source utilisé pour tester la robustesse des mots de passe en les comparant à des dictionnaires ou en utilisant des attaques de force brute.
